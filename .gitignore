@@ -1,0 +1,9 @@
+# inutile de garder les images
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# les dotfiles seront ignorés aussi (sauf gitignore)
+.*
+!.gitignore
