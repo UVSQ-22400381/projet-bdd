@@ -18,8 +18,8 @@ Essayez de travailler sur un seul fichier à la fois, sinon sur une branche diff
 
 ### Tâches à effectuer
 
-- [ ] Décrire le cahier des charges;
-- [ ] Modéliser la base de données à l'aide d'un diagramme Entité/Association;
+- [x] Décrire le cahier des charges;
+- [x] Modéliser la base de données à l'aide d'un diagramme Entité/Association;
 - [ ] Définir les contraintes d'intégrité non définies dans le modèle conceptuel;
 - [ ] Décrire les utilisateurs ou groupes d'utilisateurs ainsi que les droits qu'ils devraient avoir sur la BDD;
 - [ ] Définir les requêtes. Autrement dit, des questions au sujet de ce qu'on souhaite lire comme information;
