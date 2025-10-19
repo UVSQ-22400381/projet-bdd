@@ -2,33 +2,44 @@
 
 Liste des contraintes ne pouvant pas être représenté par le schéma de la base de données seulement. Donc les contraintes liées aux cardianlités ne seront pas traitées dans ce document.
 
-## Utilisateur
+## UTILISATEUR
 
-* Un utilisateur doit avoir un mot de passe comportant au moins une minuscule, majuscule, un chiffre, et un symbole. Le tout en ayant une longueur minimum de 8 caractères;
-* Le nom d'un utilisateur doit forcément comporter des lettres, et éventuellement des chiffres;
-* L'adresse email d'un utilisateur doit être valide;
+- Un utilisateur doit avoir un mot de passe comportant au moins une minuscule, majuscule, un chiffre, et un symbole. Le tout en ayant une longueur minimum de 8 caractères.
+- Si l’utilisateur a acheté une application X, il doit être remboursé de l’application X avant de racheter à nouveau l’application X.
+- L'utilisateur n’a pas accès aux applications dont l’âge minimum accepté est supérieur à son âge.
 
-## Application
+## APPLICATION
 
-* Le prix d'une application ne peut être négatif;
-* Le nom d'une application peut comporter des lettres ou des chiffres;
-* Le nombre de téléchargement d'une application ne peut être négatif;
+- Le prix d'une application ne peut être négatif.
+- La date de suppression d'une application doit être supérieure à sa date de publication.
+- Une application visible publiquement doit avoir une date de publication valide non nulle.
+- Pour un store donné, plusieurs applications ne peuvent pas avoir le même nom.
 
-## Editeurs
+## STORE
 
-* Le chiffre d'affaires d'un éditeur ne peut être négatif;
-* Le nom d'un éditeur doit forcément comporter des lettres, et éventuellement des chiffres;
+- La date de fermeture du store doit être supérieure à la date d’ouverture.
 
-## Avis
+## PLATEFORME
 
-* La note d'un avis doit être comprise entre 0 et 5 inclus;
+- Ne pas utiliser le même libellé pour une autre plateforme.
 
-## Licence
+## SUIVRE
 
-* Il ne peut pas y avoir deux licences actives sur le même produit;
-* La date de fin ne peut être inférieure à la date de début;
+- Un utilisateur ne peut pas suivre son propre store.
 
-## Suspensions
+## DISTRIBUTION
 
-* Il ne peut pas avoir 2 suspensions actives simultanément pour un éditeur;
-* La date de fin ne peut être inférieure à la date de début;
+- Le nombre de téléchargements doit être supérieur ou égal à 0.
+
+## EVALUER
+
+- La note doit être comprise entre 0 et 5 inclus.
+- Le titre d'un avis doit être associé du contenu, et le contenu doit avoir un titre.
+- Un utilisateur ne peut publier qu'un seul avis par application.
+
+## ACHETER
+
+- La date de fin doit être supérieure à la date d’achat.
+- Si l’achat est remboursé, la date de fin doit être renseignée.
+<!-- redondant ? -->
+- On ne peut pas acheter la même application si l’utilisateur n’a pas reçu de remboursement ou si l’application est déjà achetée.
