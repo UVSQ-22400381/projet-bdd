@@ -6,7 +6,7 @@ Utilisateur(**id**, pays, nom, mot_de_passe, email, date_création, email_valide
 Store(**id**, email, pays, date_ouverture, date_fermeture, nom, <ins>id_gestionnaire</ins>)
 Plateforme(**id**, libelle)
 Application(**id**, nom, description, categorie, public, date_pub, prix, achat_integre, <ins>id_store</ins>)
-Distribution(**id**, changelog, date_pub, public, telechargement, <ins>id_application</ins>)
+Distribution(**num**, changelog, date_pub, public, telechargement, <ins>id_application</ins>)
 Restriction(**num**, limite, <ins>id_application</ins>)
 
 Suivre(**id**, <ins>id_utilisateur</ins>, <ins>id_store</ins>)
