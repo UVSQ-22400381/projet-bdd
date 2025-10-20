@@ -9,8 +9,8 @@ Application(**id**, nom, description, categorie, public, date_pub, prix, achat_i
 Distribution(**num**, changelog, date_pub, public, telechargement, <ins>id_application</ins>)
 Restriction(**num**, limite, <ins>id_application</ins>)
 
-Suivre(**id**, <ins>id_utilisateur</ins>, <ins>id_store</ins>)
-Evaluer(**id**, <ins>id_utilisateur</ins>, <ins>id_application</ins>, titre, date_pub, note, contenu)
-Acheter(**id**, date_achat, rembourse, date_fin, <ins>id_utilisateur</ins>, <ins>id_application</ins>, <ins>id_plateforme</ins>)
-Supporter(**id**, <ins>id_application</ins>, <ins>id_plateforme</ins>)
+Suivre(<ins>id_utilisateur</ins>, <ins>id_store</ins>)
+Evaluer(<ins>id_utilisateur</ins>, <ins>id_application</ins>, titre, date_pub, note, contenu)
+Acheter(date_achat, rembourse, date_fin, <ins>id_utilisateur</ins>, <ins>id_application</ins>, <ins>id_plateforme</ins>)
+Supporter(<ins>id_application</ins>, <ins>id_plateforme</ins>)
 
