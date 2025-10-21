@@ -36,10 +36,12 @@ Liste des contraintes ne pouvant pas être représenté par le schéma de la bas
 - La note doit être comprise entre 0 et 5 inclus.
 - Le titre d'un avis doit être associé du contenu, et le contenu doit avoir un titre.
 - Un utilisateur ne peut publier qu'un seul avis par application.
+- L'utilisateur doit avoir acheté l'application qu'il évalue.
 
 ## ACHETER
 
 - La date de fin doit être supérieure à la date d’achat.
 - Si l’achat est remboursé, la date de fin doit être renseignée.
 <!-- redondant ? -->
-- On ne peut pas acheter la même application si l’utilisateur n’a pas reçu de remboursement ou si l’application est déjà achetée.
+- L'utilisateur ne peut pas acheter la même application s'il n’a pas reçu de remboursement ou si l’application est déjà achetée.
+- Un utilisateur ne peut être remboursé que si sa demande se situe dans les 14 jours suivants la date de son achat.
